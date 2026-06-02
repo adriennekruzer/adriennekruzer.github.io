@@ -189,6 +189,7 @@
     <button class="npf-tab active" data-tab="matrix">Matrix</button>
     <button class="npf-tab" data-tab="coverage">Cultivate Coverage</button>
     <button class="npf-tab" data-tab="gaps">NPF Gaps — Add to Cultivate</button>
+    <button class="npf-tab" data-tab="training">Advanced Nurse Training</button>
   </div>
 
   <div id="tab-matrix">
@@ -256,6 +257,12 @@
       </table>
     </div>
     <p class="note" id="gapsNote"></p>
+  </div>
+
+  <div id="tab-training" class="hidden">
+    <div class="gaps-summary">
+      <p>Advanced Nurse Training content coming soon.</p>
+    </div>
   </div>
 </div>
 
@@ -638,6 +645,7 @@ document.querySelectorAll('.npf-tab').forEach(t=>{
     document.getElementById('tab-matrix').classList.toggle('hidden',tab!=='matrix');
     document.getElementById('tab-coverage').classList.toggle('hidden',tab!=='coverage');
     document.getElementById('tab-gaps').classList.toggle('hidden',tab!=='gaps');
+    document.getElementById('tab-training').classList.toggle('hidden',tab!=='training');
   };
 });
 
